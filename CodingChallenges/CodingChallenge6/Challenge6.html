@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding Challenge 4</title>
+  <link rel="stylesheet" type="text/css" href="assets/Challenge6.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+
+<body>
+
+    <h1>Self Introduction</h1>
+    <form> 
+        <div> 
+          <label for="inputid">My name is:</label> 
+          
+          <input type="text" id="inputid" name="inputid" />
+
+          <label for="night">My pronouns are</label>
+	<select id="night" name="night">
+		<option value="dark">He/Him</option>
+		<option value="stormy">She/Her</option>
+		<option value="gusty">They/Them</option>
+		
+	</select>
+          
+
+	
+	<span>, I am born on </span><input type="date" name="storydate" /><span>.</span>
+    <span>I have </span>
+		<input type="number" id="sirens" name="sirens" min="1" max="50" step="1" />
+		<span>siblings.</span>
+
+        <p>My Favorite animal is...</p>
+	<div>
+		<input type="radio" id="sheep" name="cyclops" value="sheep" checked />
+		<label for="sheep">Dogs</label>
+	</div>
+	<div>
+		<input type="radio" id="humans" name="cyclops" value="humans" />
+		<label for="humans">Cats</label>
+	</div>
+	<div>
+		<input type="radio" id="jellyfish" name="cyclops" value="jellyfish" />
+		<label for="jellyfish">Others</label>
+	</div>
+
+          
+        </div>
+        
+        
+    </form>
+
+    <div class="comment-box">
+        <h2>Any interesting facts about yourself</h2>
+        <form action="/submit-comment" method="post">
+        
+            
+            <label for="comment">Type Here:</label><br><br>
+            <textarea id="comment" name="comment" rows="10" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
